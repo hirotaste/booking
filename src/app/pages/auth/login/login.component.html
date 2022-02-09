@@ -1,0 +1,35 @@
+<div class="row g-0 vh-100 background d-flex justify-content-center">
+  <div class="col-sm-5 col-lg-4 card m-auto">
+    <div class="d-flex justify-content-center my-auto">
+      <div class="col-11 my-3">
+        <div class="my-4">
+          <img src="./../../../../assets/img/clina-logo.png" alt="logo">
+        </div>
+
+        <div class="mb-3">
+          <h6 class="h3 mb-1">Bem-vindo de volta!</h6>
+        </div>
+
+        <form [formGroup]="loginForm" errorTailor (ngSubmit)="onSubmit()" novalidate>
+          <div class="mb-3">
+            <app-input-email label="Endereço de e-mail" placeholder="Digite seu e-mail"ormControlName="email"></app-input-email>
+          </div>
+          <div class="mb-3">
+            <app-input-password label="Senha" formControlName="password"></app-input-password>
+          </div>
+          <div class="d-grid mb-4">
+            <button type="submit" class="btn btn-prim">Entrar</button>
+          </div>
+
+          <div class="mb-4">
+            <a routerLink="/reset-password">Esqueci minha senha</a>
+          </div>
+
+          <div class="mb-3">
+            Novo na plataforma? <a routerLink="/">Cadastre-se</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="title-bar py-4">
+    <h3 class="title mb-3">Horários disponíveis - Itapeva - Sala roxa</h3>
+    <div class="d-flex align-items-center mb-3">
+      <img class="pin" src="./../../../../assets/img/pin.png" alt="logo">
+      Unidade Itapeva - Bela Vista, rua Itapeva, 490 Sala 68 - CEP: 01332-000.
+    </div>
+
+    <form [formGroup]="form" class="my-2">
+      <div class="d-flex">
+        <div class="col-3 me-2">
+          <date-range-picker [options]="options" [parentFormGroup]="form" [controlName]="'dates'"></date-range-picker>
+        </div>
+
+        <div class="col-2 mx-2">
+          <app-input-select label="Período do dia" formControlName="period"></app-input-select>
+        </div>
+
+        <div class="col-2 mx-2">
+          <app-input-select label="Tipo de plano" formControlName="types"></app-input-select>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="view">
+    <span class="day me-2">02</span> <span class="month">Abril</span>, sexta-feira
+  </div>
+</div>

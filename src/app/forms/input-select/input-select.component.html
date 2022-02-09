@@ -1,0 +1,9 @@
+<label *ngIf="label" [for]="id" class="form-label mb-0">{{ label }}</label>
+
+<div class="form-select">
+  <ng-select
+    [formControl]="control"
+    [attr.placeholder]="placeholder"
+  >
+  </ng-select>
+</div>

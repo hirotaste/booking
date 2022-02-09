@@ -1,0 +1,134 @@
+$font-family-sans-serif: "Source Sans Pro", sans-serif;
+
+$paragraph-margin-bottom: 0;
+$headings-margin-bottom: 0;
+$label-margin-bottom: 0;
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$body-color: #1c3869;
+$border-radius: 0.375rem;
+
+$blue: #1caad3;
+$indigo: #6610f2;
+$purple: #5754d8;
+$pink: #d63384;
+$red: #db3543;
+$orange: #fd7e14;
+$yellow: #e6a800;
+$green: #38c38d;
+$teal: #20c997;
+$cyan: #0dcaf0;
+
+$primary: $purple;
+$secondary: $body-color;
+$tertiary: $purple;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-900;
+
+$nav-link-color: $tertiary;
+$nav-link-hover-color: $tertiary;
+
+$dropdown-link-color: $tertiary;
+$dropdown-item-padding-x: 1.25rem;
+$dropdown-link-disabled-color: $white;
+$dropdown-link-active-color: $white;
+$dropdown-link-active-bg: $tertiary;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
+
+$input-btn-padding-y: 0.875rem;
+$input-btn-padding-x: 1.1875rem;
+$input-btn-line-height: 1.115;
+$input-btn-font-size: 1.125rem;
+$input-btn-font-size-lg: 1.625rem;
+
+$input-placeholder-color: #08080880;
+$input-height: 3.125rem;
+
+$link-color: $body-color;
+
+$modal-md: 600px;
+
+$nav-tabs-border-color: #e8e8e8;
+$nav-tabs-link-active-color: $tertiary;
+$nav-tabs-link-active-border-color: $tertiary;
+
+$nav-link-padding-y: 1.125rem;
+$nav-link-padding-x: 3.5rem;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1158px
+);
+
+$font-size-base: 1rem;
+
+$headings-font-weight: 700;
+$headings-color: $tertiary;
+$h1-font-size: $font-size-base * 2.5; // 40px
+$h2-font-size: $font-size-base * 1.875; //  30px
+$h3-font-size: $font-size-base * 1.625; // 26px
+$h4-font-size: $font-size-base * 1.3125; // 21px
+$h5-font-size: $font-size-base * 1.125; // 18px
+$h6-font-size: $font-size-base; // 16px
+
+$badge-color: #f9f9f8;
+$badge-font-size: 0.8125rem;
+$badge-padding-y: 0.5rem;
+$badge-padding-x: 0.5rem;
+
+$btn-font-size: 1rem;
+$btn-font-weight: 700;
+$btn-padding-y: 1.1875rem;
+$btn-padding-x: 2.375rem;
+$btn-line-height: 1.25;
+
+$pagination-active-bg: $tertiary;
+$pagination-padding-y: 0.5rem;
+$pagination-padding-x: 1rem;
+
+$form-label-font-weight: 700;
+
+$accordion-padding-y: 0.25rem;
+$accordion-padding-x: 0.25rem;
+$accordion-border-width: 0;
+$accordion-button-active-bg: inherit;
+$accordion-icon-active-color: $body-color;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6
+);

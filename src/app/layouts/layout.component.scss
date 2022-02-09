@@ -1,0 +1,15 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.layout-content {
+  background: #FAFAFA;
+  max-width: 100%;
+  flex: 1;
+}
+
+.outlet {
+  width: 100%;
+  height: calc(100% - 180px);
+}

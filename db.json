@@ -1,0 +1,37 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Sala roxa",
+      "address": "Bela Vista",
+      "allInclusive": true,
+      "betterFor": ["Fonoaudiólogo", "Psicólogo", "Nutricionista"],
+      "img": "assets/img/sala-roxa.png",
+      "objects": ["Sofá/Divã", "Lavatório/Pia", "Impressora"],
+      "price": 60,
+      "date": "2022-02-09"
+    },
+    {
+      "id": 2,
+      "name": "Sala verde",
+      "address": "Bela Vista",
+      "allInclusive": false,
+      "betterFor": ["Fonoaudiólogo"],
+      "img": "assets/img/sala-verde.png",
+      "objects": ["Lavatório/Pia", "Impressora"],
+      "price": 85,
+      "date": "2022-02-10"
+    },
+    {
+      "id": 3,
+      "name": "Sala azul",
+      "address": "Bela Vista",
+      "allInclusive": false,
+      "betterFor": ["Medicina"],
+      "img": "assets/img/sala-azul.png",
+      "objects": ["Marca versátil", "Balança de chão", "Balança de mesa", "Armário", "Ultrasom", "Sofá/Divã", "Lavatório/Pia", "Impressora"],
+      "price": 86,
+      "date": "2022-02-11"
+    }
+  ]
+}

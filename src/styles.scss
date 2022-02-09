@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+
+$font-family-sans-serif: "Poppins", sans-serif;
+
+$paragraph-margin-bottom: 0;
+$headings-margin-bottom: 0;
+$label-margin-bottom: 0;
+
+$white: #fff;
+$gray-100: #fafafa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #4F4F4F;
+$gray-900: #212529;
+$black: #111;
+
+$indigo: #212E89;
+$purple: #7A35FF;
+$red: #db3543;
+$yellow: #e6a800;
+$green: #38c38d;
+$gray: #AAAAAA;
+
+$primary: $purple;
+$secondary: #9661ff;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
+
+  .btn-prim {
+    background-color: $primary;
+    border-color: $primary;
+  }
+  .btn-prim::after {
+    background-color: $primary;
+    border-color: $primary;
+  }
+  .btn-prim:hover {
+    background-color: $secondary;
+    border-color: $secondary;
+  }
+
+  .primary {
+    color: $primary;
+  }
+
+  .pin {
+    height: 16px;
+    width: auto;
+    margin-right: 0.5rem;
+  }
+

@@ -1,0 +1,78 @@
+.title {
+  font-weight: 800;
+}
+
+.title-bar {
+  padding-top: 1rem;
+}
+
+.card {
+  width: 100%;
+  height: 220px;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+.col {
+  max-width: fit-content;
+}
+
+.sala {
+  height: 100%;
+  width: auto;
+}
+
+.info {
+  min-width: 300px;
+  margin-top: 20px;
+}
+
+.detais {
+  width: 22%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.object {
+  color: #4F4F4F;
+  opacity: 1;
+  font-size: 10px;
+  padding: 4px 8px 4px 8px;
+  margin-right: 4px;
+  height: 24px;
+  border: 1px solid #CFCFCF;
+  border-radius: 2px;
+}
+
+.better {
+  text-align: left;
+  font: normal normal 600 14px/28px Poppins, sans-serif;
+  letter-spacing: 0px;
+  color: #4F4F4F;
+  opacity: 1;
+}
+
+.inclusive {
+  text-align: right;
+  font: normal normal normal 14px/20px Poppins, sans-serif;
+  letter-spacing: 0px;
+  color: #898989;
+  opacity: 1;
+}
+
+.price {
+  text-align: right;
+  font: normal normal 600 24px/28px Poppins, sans-serif;
+  letter-spacing: 0px;
+  color: #111111;
+}
+
+.btn-prim {
+  height: 44px;
+  width: 13rem;
+  font: normal normal bold 16px/26px Poppins, sans-serif;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
