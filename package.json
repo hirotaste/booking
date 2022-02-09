@@ -7,8 +7,7 @@
     "dev": "set NG_PERSISTENT_BUILD_CACHE=1 && ng serve -o --port 4204",
     "build": "ng build",
     "lint": "ng lint && npm run lint:styles",
-    "lint:styles": "stylelint \"src/**/*.scss\"",
-    "deploy": "npm --no-git-tag-version version patch && ng build && firebase deploy"
+    "lint:styles": "stylelint \"src/**/*.scss\""
   },
   "private": true,
   "dependencies": {
