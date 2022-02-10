@@ -7,7 +7,8 @@
     "dev": "set NG_PERSISTENT_BUILD_CACHE=1 && ng serve -o --port 4204",
     "build": "ng build",
     "lint": "ng lint && npm run lint:styles",
-    "lint:styles": "stylelint \"src/**/*.scss\""
+    "lint:styles": "stylelint \"src/**/*.scss\"",
+    "json": "json-server --watch db.json"
   },
   "private": true,
   "dependencies": {

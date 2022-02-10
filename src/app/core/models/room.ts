@@ -4,6 +4,7 @@ export class Room {
   img: string = '';
   name: string = '';
   address: string = '';
+  street: string = '';
   objects: string[] = [];
   betterFor: string[] = [];
   allInclusive: boolean = false;

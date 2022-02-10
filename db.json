@@ -4,6 +4,7 @@
       "id": 1,
       "name": "Sala roxa",
       "address": "Bela Vista",
+      "street": "Itapeva",
       "allInclusive": true,
       "betterFor": ["Fonoaudiólogo", "Psicólogo", "Nutricionista"],
       "img": "assets/img/sala-roxa.png",
@@ -15,6 +16,7 @@
       "id": 2,
       "name": "Sala verde",
       "address": "Bela Vista",
+      "street": "Itapeva",
       "allInclusive": false,
       "betterFor": ["Fonoaudiólogo"],
       "img": "assets/img/sala-verde.png",
@@ -26,12 +28,162 @@
       "id": 3,
       "name": "Sala azul",
       "address": "Bela Vista",
+      "street": "Itapeva",
       "allInclusive": false,
       "betterFor": ["Medicina"],
       "img": "assets/img/sala-azul.png",
       "objects": ["Marca versátil", "Balança de chão", "Balança de mesa", "Armário", "Ultrasom", "Sofá/Divã", "Lavatório/Pia", "Impressora"],
       "price": 86,
       "date": "2022-02-11"
+    }
+  ],
+  "schedules": [
+    {
+      "id": 1,
+      "date": "2022-02-14",
+      "period": "morning",
+      "hour": 10,
+      "roomId": 1
+    },
+    {
+      "id": 2,
+      "date": "2022-02-14",
+      "period": "morning",
+      "hour": 11,
+      "roomId": 1
+    },
+    {
+      "id": 3,
+      "date": "2022-02-14",
+      "period": "evening",
+      "hour": 14,
+      "roomId": 1
+    },
+    {
+      "id": 4,
+      "date": "2022-02-14",
+      "period": "evening",
+      "hour": 16,
+      "roomId": 1
+    },
+    {
+      "id": 5,
+      "date": "2022-02-15",
+      "period": "evening",
+      "hour": 13,
+      "roomId": 1
+    },
+    {
+      "id": 6,
+      "date": "2022-02-15",
+      "period": "evening",
+      "hour": 14,
+      "roomId": 1
+    },
+    {
+      "id": 7,
+      "date": "2022-02-15",
+      "period": "evening",
+      "hour": 15,
+      "roomId": 1
+    },
+    {
+      "id": 8,
+      "date": "2022-02-15",
+      "period": "evening",
+      "hour": 16,
+      "roomId": 1
+    },
+    {
+      "id": 9,
+      "date": "2022-02-16",
+      "period": "night",
+      "hour": 18,
+      "roomId": 1
+    },
+    {
+      "id": 10,
+      "date": "2022-02-16",
+      "period": "night",
+      "hour": 19,
+      "roomId": 1
+    },
+    {
+      "id": 11,
+      "date": "2022-02-16",
+      "period": "night",
+      "hour": 20,
+      "roomId": 1
+    },
+    {
+      "id": 12,
+      "date": "2022-02-16",
+      "period": "night",
+      "hour": 21,
+      "roomId": 1
+    },
+    {
+      "id": 23,
+      "date": "2022-02-14",
+      "period": "evening",
+      "hour": 14,
+      "roomId": 2
+    },
+    {
+      "id": 24,
+      "date": "2022-02-14",
+      "period": "evening",
+      "hour": 16,
+      "roomId": 3
+    },
+    {
+      "id": 25,
+      "date": "2022-02-15",
+      "period": "evening",
+      "hour": 13,
+      "roomId": 2
+    },
+    {
+      "id": 26,
+      "date": "2022-02-15",
+      "period": "evening",
+      "hour": 14,
+      "roomId": 3
+    },
+    {
+      "id": 27,
+      "date": "2022-02-15",
+      "period": "evening",
+      "hour": 15,
+      "roomId": 2
+    },
+    {
+      "id": 28,
+      "date": "2022-02-15",
+      "period": "evening",
+      "hour": 16,
+      "roomId": 3
+    },
+    {
+      "id": 29,
+      "date": "2022-02-16",
+      "period": "night",
+      "hour": 18,
+      "roomId": 2
+    },
+    {
+      "id": 20,
+      "date": "2022-02-16",
+      "period": "night",
+      "hour": 19,
+      "roomId": 3
+    },
+    {
+      "id": 21,
+      "date": "2022-02-16",
+      "period": "night",
+      "hour": 20,
+      "roomId": 3
     }
   ]
 }

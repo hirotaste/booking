@@ -1,29 +1,61 @@
-<div class="container">
-  <div class="title-bar py-4">
-    <h3 class="title mb-3">Horários disponíveis - Itapeva - Sala roxa</h3>
-    <div class="d-flex align-items-center mb-3">
-      <img class="pin" src="./../../../../assets/img/pin.png" alt="logo">
-      Unidade Itapeva - Bela Vista, rua Itapeva, 490 Sala 68 - CEP: 01332-000.
+<div class="container d-flex">
+  <div class="col-md-7">
+    <div class="title-bar py-4 pe-4">
+      <h3 class="title mb-3">Horários disponíveis - {{ room.street }} - {{ room.name }}</h3>
+      <div class="d-flex align-items-center mb-3">
+        <img class="pin" src="./../../../../assets/img/pin.png" alt="pin">
+        Unidade Itapeva - Bela Vista, rua Itapeva, 490 Sala 68 - CEP: 01332-000.
+      </div>
+
+      <form [formGroup]="form" class="my-2">
+        <div class="d-flex">
+          <div class="col-6 me-2">
+            <date-range-picker [options]="options" [parentFormGroup]="form" [controlName]="'dates'"></date-range-picker>
+          </div>
+
+          <div class="col-3 mx-2">
+            <app-input-select label="Período do dia" formControlName="period"></app-input-select>
+          </div>
+
+          <div class="col-3 mx-2">
+            <app-input-select label="Tipo de plano" formControlName="types"></app-input-select>
+          </div>
+        </div>
+      </form>
     </div>
 
-    <form [formGroup]="form" class="my-2">
-      <div class="d-flex">
-        <div class="col-3 me-2">
-          <date-range-picker [options]="options" [parentFormGroup]="form" [controlName]="'dates'"></date-range-picker>
+    <div class="view">
+      <div class="my-3" *ngFor="let item of list; index as i">
+        <div class="my-2">
+          <span class="day me-2">{{ item.date | date:'dd' }}</span>
+          <span class="month text-capitalize">{{ item.date | date:'MMMM' | titlecase }}</span>,
+          {{ item.date | date:'EEEE' }}
         </div>
-
-        <div class="col-2 mx-2">
-          <app-input-select label="Período do dia" formControlName="period"></app-input-select>
-        </div>
-
-        <div class="col-2 mx-2">
-          <app-input-select label="Tipo de plano" formControlName="types"></app-input-select>
+        <div *ngFor="let per of item.periods; index as j">
+          <div *ngIf="per?.hours?.length">
+            <div class="period mb-2">No periodo da - <b>{{ dayPeriodLabel.get(per.period) }}</b></div>
+            <div class="hours mb-3">
+              <div [ngClass]="h.selected ? 'selected' : 'square'" *ngFor="let h of per.hours" (click)="h.selected = !h.selected; calcTotal()">
+                {{ ("0" + h.hour).slice(-2) }}:00 às {{ ("0" + (h.hour + 1)).slice(-2) }}:00
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </form>
+    </div>
   </div>
 
-  <div class="view">
-    <span class="day me-2">02</span> <span class="month">Abril</span>, sexta-feira
+  <div class="col-md-5 pt-5 ps-5 ms-4 mt-4">
+    <div class="total">
+      <p>Valor total</p>
+      <div class="value">R$ {{ total * room.price }},00</div>
+      <div class="reserva">
+        <img class="pin" src="./../../../../assets/img/iconfinder_clock.svg" alt="clock">
+        {{ total }} reserva
+      </div>
+      <button class="btn btn-prim btn-block">
+        Adicionar Reserva
+      </button>
+    </div>
   </div>
 </div>

@@ -17,11 +17,11 @@ export class AuthGuard implements CanActivate, CanActivateChild {
   }
 
   private async guard(): Promise<boolean | UrlTree> {
-    const jwt = true;
+    // const token = window.localStorage.getItem('token');
 
-    if (!jwt) {
-      return this.router.parseUrl('/login');
-    }
+    // if (!token) {
+    //   return this.router.parseUrl('/login');
+    // }
 
     return true;
   }
